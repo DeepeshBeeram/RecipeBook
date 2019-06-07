@@ -15,6 +15,13 @@ new shopping_model('Oranges', 5),
 
   ];
 
+
+
+  addIngredients(newIngredient:shopping_model){
+
+    this.ingredients.push(newIngredient);
+  }
+
   constructor() { }
 
   ngOnInit() {

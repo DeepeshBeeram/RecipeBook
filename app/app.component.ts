@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { stringify } from '@angular/compiler/src/util';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'udemy-project';
+  loadFeature: string= 'recipe';
+
+  onNavigate(feature: string){
+
+    this.loadFeature = feature;
+
+    
+  }
 }
