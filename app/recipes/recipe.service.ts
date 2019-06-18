@@ -32,6 +32,11 @@ getRecipe(){
    return this.recipes.slice();
 }
 
+ongetRecipeID(index: number){
+return this.recipes[index];
+
+}
+
 onrecipeIngredient(ingredients:shopping_model[]){
 this.SLservice.AddIngredients(ingredients);
 

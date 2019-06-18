@@ -8,12 +8,4 @@ import { stringify } from '@angular/compiler/src/util';
 })
 export class AppComponent {
   title = 'udemy-project';
-  loadFeature: string= 'recipe';
-
-  onNavigate(feature: string){
-
-    this.loadFeature = feature;
-
-    
-  }
 }
