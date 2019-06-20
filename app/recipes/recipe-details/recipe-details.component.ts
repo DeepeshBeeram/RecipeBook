@@ -32,4 +32,18 @@ id:number;
 
   }
 
+
+  onEditRecipe(){
+
+    this.router.navigate(['edit'], {relativeTo: this.route})
+  }
+
+  onDeleteRecipe(){
+    this.Rservice.recipeDelete(this.id);
+    this.router.navigate(['/recipes']);
+
+
+  }
+
+
 }
